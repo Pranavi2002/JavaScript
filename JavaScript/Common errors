@@ -1,0 +1,15 @@
+5=="5" -- always true
+5==="5" -- false since the type is different
+5+5 = 10
+'5'+'5' = '55'
+'5'+5 = '55'
+'5'+5+5 = '555'
+Addition of a single string and any number of integers considers the concatenation operation
+if(age<18);
+	document.write("Too Young");
+this means that if age<18 then do nothing and always print Too ypung, irrespective of age 
+if(age<18)
+	document.write("Too young");
+this means that if age<18 then do print Too young
+Hence indentation doesn't matter , what most matters is the semi-colon
+The console typically shows syntax errors.  However, when you use the console.log to display intermediate results, it sometimes helps you find our logical errors as they appear.

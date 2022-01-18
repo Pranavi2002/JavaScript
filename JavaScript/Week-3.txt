@@ -1,0 +1,21 @@
+Built-in JavaScript functions (alert, prompt, etc) can be mixed in with other
+HTML code though you don't use the <script> tag.Any element of the DOM can have 
+an event attached to it.
+
+If a function is defined twice, the second declaration will be called when 
+used.The first declaration of the function will be overridden by the second.
+
+1. <a href = "http://www.umich.edu" onclick = "return true">University of Michigan</a><br/>
+2. <a href = "#" onclick = "alert(this.href)">University of Michigan </a><br/>	
+3. <a href = "page2.html" onclick = "alert(this.href)">University of Michigan </a><br/>
+Only the first link will take you to the University of Michigan website .
+
+1. <a href = "http://www.umich.edu" onclick = "alert(this.href)">University of Michigan</a><br/>
+2. <a href = "#" onclick = "alert(this.href)">University of Michigan </a><br/>	
+3. <a href = "page2.html" onclick = "alert(this.href)">University of Michigan </a><br/>
+Only the first link will produce the alert  “http://www.umich.edu/“.
+
+Assume you have a page with four paragraph tags.The proper JavaScript code to 
+change the content of the second paragraph to "What does the Fox say?" is 
+ document.getElementsByTagName('p')[1].innerHTML = "What does the Fox say?"
+

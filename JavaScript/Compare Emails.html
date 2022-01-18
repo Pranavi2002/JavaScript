@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script>
+		function check(){
+			var email1 = document.getElementById('email_addr');
+			var email2 = document.getElementById('email_repeat');
+			if(email1.value != email2.value){
+				alert("Two emails must match!");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<label>Preferred email address:
+			<input type="email" id="email_addr"
+			  name="email1" value="me@me.com" required>
+		</label><br/>
+
+		<label>Repeat email address:
+			<input type="email" id="email_repeat" 
+			  name="email2" required onchange="return check()">
+		</label><br/>
+
+		<input type="submit" value="Confirm Emails!"
+		 onclick="return check();">
+	</form>
+</body>
+</html>

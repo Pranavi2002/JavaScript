@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+	<script>
+		function showProperties(element)
+		{
+			document.getElementById('message').innerHTML=element.alt;
+		}
+	</script>
+	<h1 id="message">Hover over an image</h1>
+	<img class="preview" alt="It's a Book!!!" src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" onmouseover="showProperties(this)" onmouseleave="document.getElementById('message').innerHTML='Hover over an image';">
+
+	<img class="preview" alt="It's a Peacock Feather!!!" src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" onmouseover="showProperties(this)" onmouseleave="document.getElementById('message').innerHTML='Hover over an image';">
+
+	<img class="preview" alt="It's a Landscape!!!" src="https://media.istockphoto.com/photos/picturesque-morning-in-plitvice-national-park-colorful-spring-scene-picture-id1093110112?k=20&m=1093110112&s=612x612&w=0&h=3OhKOpvzOSJgwThQmGhshfOnZTvMExZX2R91jNNStBY=" onmouseover="showProperties(this)" onmouseleave="document.getElementById('message').innerHTML='Hover over an image';">
+</body>
+</html>

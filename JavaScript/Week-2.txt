@@ -1,0 +1,8 @@
+You can put Javascript in the <head> section, <body> section and an external 
+file.
+
+
+src; e.g., src = "extFile.js"  attribute is used to link to an external
+JavaScript file.
+
+You can define a function without calling it.
