@@ -1,0 +1,9 @@
+Every valid web page can be represented as a tree.  This tree is referred to as the DOM.
+
+JavaScript uses an API interface to access the DOM structure.
+
+innerHTML does NOT require the use of parentheses.
+
+document.getElementsById(idName) is not valid.
+
+The prompt will return a value, alert does not.
